@@ -12,7 +12,7 @@
 	<Grid
 		ShowGridLines="True"
 		Background="White"
-		RowDefinitions = "50, 275, 325, *"
+		RowDefinitions = "50, *"
 		ColumnDefinitions = "950, *">
 
 		<DockPanel
@@ -37,24 +37,27 @@
 			</TextBlock>
 		</StackPanel>
 
-		<DockPanel 
-			Grid.Row="3"
-			Grid.Column="0">
-			<TextBlock Margin="5 15" Foreground="Black"> Tags: Tag1 Tag2 Tag3 Tag4 </TextBlock>
-			<TextBlock Margin="0 15 15 0" Foreground="Black" TextAlignment="Right"> Rate this article    4/5 </TextBlock>
-		</DockPanel>
-
 		<Image
-			Source="/Assets/moree.jpg"
-			Grid.Row ="2" 
-			Grid.Column="0">
+			Source="avares://AvaloniaApplication4/Assets/moree.jpg"
+			VerticalAlignment="Bottom"
+			Margin="0 100"
+			Grid.Row="1"
+			Grid.Column="0"
+			MaxHeight="400"
+			MaxWidth="400">
 		</Image>
+		
+		<DockPanel
+			VerticalAlignment="Bottom"
+			Grid.Row="1"
+			Grid.Column="0">
+			<TextBlock Margin="5 5" Foreground="Black"> Tags: Tag1 Tag2 Tag3 Tag4 </TextBlock>
+			<TextBlock Margin="5 5 5 5" Foreground="Black" TextAlignment="Right"> Rate this article    4/5 </TextBlock>
+		</DockPanel>
 
 		<StackPanel
 			Grid.Row ="1"
-			Grid.RowSpan="3"
-			Grid.Column="1"
-			Orientation="Vertical">
+			Grid.Column="1">
 			<TextBlock  Margin="25 5" Foreground="Black" TextWrapping="Wrap">
 				<LineBreak/> <LineBreak/> <LineBreak/>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse...
